@@ -1,0 +1,36 @@
+body{
+    height: auto;
+    margin: 10px;
+    background: rgb(104,212,214);
+}
+.frame
+{
+    padding: 13px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    background: rgb(104,104,113);
+}
+.collection
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+p
+{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.img{
+    width: 75%;
+    height: 75%;
+    margin: auto;
+}
