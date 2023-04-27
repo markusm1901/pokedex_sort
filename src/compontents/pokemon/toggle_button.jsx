@@ -11,6 +11,6 @@ export const Button = (prop)=>{
         }
     }
     return (<div>
-        <button type="button" onClick={clicked}>{ state ? prop.text.on : prop.text.off}</button>
+        <button type="button" className="btn" onClick={clicked}>{ state ? prop.text.on : prop.text.off}</button>
     </div>)
 } 

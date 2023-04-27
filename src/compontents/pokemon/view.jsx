@@ -68,7 +68,7 @@ export const View = () =>
 
     return (
         <div>
-            <div>
+            <div className='cos'>
             <input type="search" value={pokemon} onChange={filter} className="input" placeholder="Filter"/>
             <h3>filter_by_id</h3>
             <Button text={{on: "active", off:"inactive"}} props={filter_by_id}></Button>
@@ -76,15 +76,17 @@ export const View = () =>
             <Button text={{on: "active", off:"inactive"}} props={filter_name_fn}></Button>
             <br></br>
             <h3>filter_by_type</h3>
+            <div className='btns'>
             {
-                    types_array.map((el) => {
-                        const tmp = el.english;
+                types_array.map((el) => {
+                    const tmp = el.english;
                     return(
                         <Button text={{ on: tmp, off: "untoggled"+tmp }} props={filter_by_type} type={tmp}/>
-                    );
-                })
-            }
+                        );
+                    })
+                }
             </div>
+                </div>
 
         <div class="collection">
             {
